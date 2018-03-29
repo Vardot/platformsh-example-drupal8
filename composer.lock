@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e78f59493ba99ca71a3e4dc18e73e9f",
+    "content-hash": "56358003da34a57aabe5089e75b06db2",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1310,8 +1310,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+4-dev",
-                    "datestamp": "1513000986",
+                    "version": "8.x-1.2+1-dev",
+                    "datestamp": "1519650184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2276,16 +2276,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.0",
+            "version": "8.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "0b9070370e272da441b4be52561c559c05f4553d"
+                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/0b9070370e272da441b4be52561c559c05f4553d",
-                "reference": "0b9070370e272da441b4be52561c559c05f4553d",
+                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
                 "shasum": ""
             },
             "require": {
@@ -2513,7 +2513,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-07T21:10:20+00:00"
+            "time": "2018-03-27T09:58:42+00:00"
         },
         {
             "name": "drupal/crop",
@@ -5421,17 +5421,17 @@
         },
         {
             "name": "drupal/masquerade",
-            "version": "2.0.0-beta1",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/masquerade",
-                "reference": "8.x-2.0-beta1"
+                "reference": "8.x-2.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/masquerade-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "d8071c2b01db9a3cc5d5bc8ecd570276e12840d4"
+                "url": "https://ftp.drupal.org/files/projects/masquerade-8.x-2.0-beta2.zip",
+                "reference": "8.x-2.0-beta2",
+                "shasum": "a9fc1a54636f131d1e344113ce4c80a6c27bc8aa"
             },
             "require": {
                 "drupal/core": "*"
@@ -5442,41 +5442,43 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1481184923",
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1521762184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": {
-                    "Issue #2951196: Fix Permission Denied when trying to masquerade when baseUrl is not /": "https://www.drupal.org/files/issues/2018-03-09/masquerade-no-baseUrl-2951196-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Gurpartap Singh",
-                    "homepage": "https://www.drupal.org/user/41470"
+                    "name": "Andrey Postnikov (andypost)",
+                    "homepage": "https://www.drupal.org/u/andypost",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "andypost",
-                    "homepage": "https://www.drupal.org/user/118908"
+                    "name": "David Norman (deekayen)",
+                    "homepage": "https://www.drupal.org/u/deekayen",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "deekayen",
-                    "homepage": "https://www.drupal.org/user/972"
+                    "name": "Mark Shropshire (shrop)",
+                    "homepage": "https://www.drupal.org/u/shrop",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "deviantintegral",
-                    "homepage": "https://www.drupal.org/user/71291"
+                    "name": "Daniel Kudwien (sun)",
+                    "homepage": "https://www.drupal.org/u/sun",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "shrop",
-                    "homepage": "https://www.drupal.org/user/14767"
+                    "name": "Andrew Berry (deviantintegral)",
+                    "homepage": "https://www.drupal.org/u/deviantintegral",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "sun",
@@ -5486,7 +5488,9 @@
             "description": "Allows privileged users to masquerade as another user.",
             "homepage": "https://www.drupal.org/project/masquerade",
             "support": {
-                "source": "http://cgit.drupalcode.org/masquerade"
+                "source": "https://git.drupal.org/project/masquerade.git",
+                "issues": "https://www.drupal.org/project/issues/masquerade",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -7212,17 +7216,17 @@
         },
         {
             "name": "drupal/schema_metatag",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/schema_metatag",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "d1f79239491d9cd38ac94cf4843c261d56bda987"
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "7394891522f58e08fd4b6383033442251c98d934"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -7231,6 +7235,7 @@
             "require-dev": {
                 "drupal/metatag_views": "*",
                 "drupal/schema_article": "*",
+                "drupal/schema_organization": "*",
                 "drupal/votingapi": "*"
             },
             "type": "drupal-module",
@@ -7239,8 +7244,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1520892180",
+                    "version": "8.x-1.2",
+                    "datestamp": "1521925680",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8241,13 +8246,17 @@
                 },
                 {
                     "name": "Getulio Valentin Sánchez (gvso)",
-                    "homepage": "https://www.drupal.org/user/3510098",
+                    "homepage": "https://www.drupal.org/user/3509455",
                     "email": "valentin2507@gmail.com"
                 },
                 {
                     "name": "Utkarsh Dixit (denutkarsh)",
-                    "homepage": "https://www.drupal.org/user/3101285",
+                    "homepage": "https://www.drupal.org/user/3510098",
                     "email": "downloadplaza97@gmail.com"
+                },
+                {
+                    "name": "gvso",
+                    "homepage": "https://www.drupal.org/user/3101285"
                 },
                 {
                     "name": "himanshu-dixit",
@@ -9898,17 +9907,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-rc6",
+            "version": "5.0.0-rc7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-rc6"
+                "reference": "8.x-5.0-rc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc6.zip",
-                "reference": "8.x-5.0-rc6",
-                "shasum": "fa534723f1aea1255d19bfd42ad9def9ac0fcf14"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc7.zip",
+                "reference": "8.x-5.0-rc7",
+                "shasum": "4bac8cb69337034d9737f0d746d74097048d5f72"
             },
             "require": {
                 "drupal/core": "*"
@@ -9925,8 +9934,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc6",
-                    "datestamp": "1521230880",
+                    "version": "8.x-5.0-rc7",
+                    "datestamp": "1521829380",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -10316,16 +10325,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.0",
+            "version": "6.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
@@ -10335,7 +10344,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -10344,7 +10353,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "6.3-dev"
                 }
             },
             "autoload": {
@@ -10377,7 +10386,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22T18:50:49+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -12588,16 +12597,16 @@
         },
         {
             "name": "vardot/varbase",
-            "version": "8.4.17",
+            "version": "8.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase.git",
-                "reference": "af8c6e002b0fc919092c4229e70dcf87c13540cf"
+                "reference": "4642efc4befa11ce249cd7192782d56c6a7ea7c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase/zipball/af8c6e002b0fc919092c4229e70dcf87c13540cf",
-                "reference": "af8c6e002b0fc919092c4229e70dcf87c13540cf",
+                "url": "https://api.github.com/repos/Vardot/varbase/zipball/4642efc4befa11ce249cd7192782d56c6a7ea7c3",
+                "reference": "4642efc4befa11ce249cd7192782d56c6a7ea7c3",
                 "shasum": ""
             },
             "require": {
@@ -12628,7 +12637,7 @@
                 "drupal/config_perms": "1.1",
                 "drupal/config_update": "1.5",
                 "drupal/content_lock": "1.0-alpha8",
-                "drupal/core": "8.5.0",
+                "drupal/core": "8.5.1",
                 "drupal/crop": "1.5",
                 "drupal/ctools": "3.0",
                 "drupal/default_content": "1.0-alpha7",
@@ -12669,7 +12678,7 @@
                 "drupal/mail_edit": "1.x-dev#bcd0041830d8581b36e6211f0c8eabd8caf9652b",
                 "drupal/mailsystem": "4.1",
                 "drupal/masonry": "1.0-rc2",
-                "drupal/masquerade": "2.0-beta1",
+                "drupal/masquerade": "2.0-beta2",
                 "drupal/material_admin": "1.0-alpha6",
                 "drupal/material_admin_support": "1.x-dev#96ce192c31643faf69d77aca3c68578f778be3bc",
                 "drupal/maxlength": "1.0-beta1",
@@ -12696,7 +12705,7 @@
                 "drupal/responsive_preview": "1.0-alpha7",
                 "drupal/revision_log_default": "1.0",
                 "drupal/roleassign": "1.0-alpha2",
-                "drupal/schema_metatag": "1.1",
+                "drupal/schema_metatag": "1.2",
                 "drupal/search_api": "1.7",
                 "drupal/seckit": "1.0-alpha2",
                 "drupal/security_review": "1.x-dev#35ebae445bb260e961e47c4c58efe7c50c228999",
@@ -12739,7 +12748,7 @@
                 "drupal/views_infinite_scroll": "1.5",
                 "drupal/viewsreference": "2.0-alpha4",
                 "drupal/vmi": "1.0-rc1",
-                "drupal/webform": "5.0-rc6",
+                "drupal/webform": "5.0-rc7",
                 "drupal/xmlsitemap": "1.0-alpha2",
                 "drupal/yoast_seo": "1.3",
                 "mkalkbrenner/php-htmldiff-advanced": "~0.0.8",
@@ -12904,9 +12913,6 @@
                     },
                     "drupal/login_destination": {
                         "Issue #2947616: Fixed SetOptions on null causing error.": "https://www.drupal.org/files/issues/2018-03-09/toolbar_alter_error-2947616-11.patch"
-                    },
-                    "drupal/masquerade": {
-                        "Issue #2951196: Fix Permission Denied when trying to masquerade when baseUrl is not /": "https://www.drupal.org/files/issues/2018-03-09/masquerade-no-baseUrl-2951196-3.patch"
                     }
                 }
             },
@@ -12927,7 +12933,7 @@
                 }
             ],
             "description": "Varbase: The Ultimate Drupal 8 CMS Starter Kit (Bootstrap Ready) | by Vardot",
-            "time": "2018-03-20T11:47:51+00:00"
+            "time": "2018-03-29T08:52:17+00:00"
         },
         {
             "name": "webflo/drupal-finder",
