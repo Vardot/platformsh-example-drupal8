@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87d2060343b60e1d0bcd63fa89c06c1b",
+    "content-hash": "c5c27dfddf6f47730d95f9034b85fddd",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2616,16 +2616,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.2",
+            "version": "8.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "356292934802bb1aecc478e88a3cba77442d7c62"
+                "reference": "9e9a1dd9e280ebaf10622217e54448b529167965"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/356292934802bb1aecc478e88a3cba77442d7c62",
-                "reference": "356292934802bb1aecc478e88a3cba77442d7c62",
+                "url": "https://api.github.com/repos/drupal/core/zipball/9e9a1dd9e280ebaf10622217e54448b529167965",
+                "reference": "9e9a1dd9e280ebaf10622217e54448b529167965",
                 "shasum": ""
             },
             "require": {
@@ -2791,7 +2791,7 @@
                 "jcalderonzumba/gastonjs": "^1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
-                "phpspec/prophecy": "^1.4",
+                "phpspec/prophecy": "^1.7",
                 "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
@@ -2831,11 +2831,11 @@
                 "patches_applied": {
                     "Issue #2869592: Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "Issue #2885441: EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                    "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-10-17/2815221-reroll-8.6.1.patch",
-                    "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.2.patch",
-                    "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-10-02/2855026-55.patch",
+                    "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-09-24/2815221-109.patch",
+                    "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch",
+                    "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-11-07/2914389-11-do-not-test.patch",
                     "Issue #2720101 Label (Title) not set for Views block (exposed filters in Block)": "https://www.drupal.org/files/issues/2720101-53.patch",
-                    "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-08-08/2599228-58.patch",
+                    "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-10-06/2599228-74.patch",
                     "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
                 }
             },
@@ -2860,7 +2860,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-10-17T22:19:50+00:00"
+            "time": "2018-11-07T14:45:40+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6996,6 +6996,10 @@
                 {
                     "name": "efpapado",
                     "homepage": "https://www.drupal.org/user/1009348"
+                },
+                {
+                    "name": "weseze",
+                    "homepage": "https://www.drupal.org/user/417521"
                 }
             ],
             "description": "Extends the paragraphs field widgets to support asymmetric translations.",
@@ -9398,8 +9402,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+19-dev",
-                    "datestamp": "1540998780",
+                    "version": "8.x-1.0-beta1+20-dev",
+                    "datestamp": "1541084880",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9904,17 +9908,17 @@
         },
         {
             "name": "drupal/varbase_core",
-            "version": "6.1.0",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/varbase_core",
-                "reference": "8.x-6.1"
+                "reference": "8.x-6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.1.zip",
-                "reference": "8.x-6.1",
-                "shasum": "bdfbe89fd3b95e4bc09c3c4cc520191e16fd63f3"
+                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.2.zip",
+                "reference": "8.x-6.2",
+                "shasum": "1714378f80e4503991b7fe607c1ec1ca463b7a3d"
             },
             "require": {
                 "composer/installers": "^1.5.0",
@@ -9935,7 +9939,7 @@
                 "drupal/config_perms": "^2.0-beta1",
                 "drupal/config_update": "^1.5",
                 "drupal/content_lock": "^1.0-alpha8",
-                "drupal/core": "~8.6.2",
+                "drupal/core": "~8.6.3",
                 "drupal/crop": "*",
                 "drupal/ctools": "3.0",
                 "drupal/default_content": "1.0-alpha7",
@@ -9996,7 +10000,7 @@
                 "drupal/views_infinite_scroll": "^1.5",
                 "drupal/viewsreference": "^2.0-alpha4",
                 "drupal/vmi": "^2.0",
-                "drupal/webform": "^5.0-rc24",
+                "drupal/webform": "^5.0-rc26",
                 "drupal/yoast_seo": "*",
                 "mkalkbrenner/php-htmldiff-advanced": "~0.0.8",
                 "oomphinc/composer-installers-extender": "^1.1.2"
@@ -10051,8 +10055,8 @@
                     "dev-8.x-6.x": "8.6.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-6.1",
-                    "datestamp": "1541141280",
+                    "version": "8.x-6.2",
+                    "datestamp": "1541691780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10068,11 +10072,11 @@
                     "drupal/core": {
                         "Issue #2869592: Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                         "Issue #2885441: EntityReferenceAutocompleteWidget should define its size setting as an integer": "https://www.drupal.org/files/issues/2885441-2.patch",
-                        "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-10-17/2815221-reroll-8.6.1.patch",
-                        "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.2.patch",
-                        "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-10-02/2855026-55.patch",
+                        "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2018-09-24/2815221-109.patch",
+                        "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch",
+                        "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-11-07/2914389-11-do-not-test.patch",
                         "Issue #2720101 Label (Title) not set for Views block (exposed filters in Block)": "https://www.drupal.org/files/issues/2720101-53.patch",
-                        "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-08-08/2599228-58.patch",
+                        "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-10-06/2599228-74.patch",
                         "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
                     },
                     "drupal/coffee": {
@@ -10772,7 +10776,7 @@
         },
         {
             "name": "drupal/varbase_webform",
-            "version": "6.1.0",
+            "version": "6.2.0",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/ultimate_cron": "*",
@@ -10789,8 +10793,8 @@
                     "dev-6.x": "6.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-6.1",
-                    "datestamp": "1541141280",
+                    "version": "8.x-6.2",
+                    "datestamp": "1541691780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11310,17 +11314,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-rc24",
+            "version": "5.0.0-rc26",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-rc24"
+                "reference": "8.x-5.0-rc26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc24.zip",
-                "reference": "8.x-5.0-rc24",
-                "shasum": "9dda44bef5e497cbf0ed6dfc443d70ef51b1bc49"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc26.zip",
+                "reference": "8.x-5.0-rc26",
+                "shasum": "9bcddf036572a1b8896412aa7d7f214152f8a717"
             },
             "require": {
                 "drupal/core": "*"
@@ -11328,6 +11332,7 @@
             "require-dev": {
                 "drupal/address": "~1.4",
                 "drupal/devel": "*",
+                "drupal/jsonapi": "~2.0",
                 "drupal/token": "~1.3",
                 "drupal/webform_access": "*",
                 "drupal/webform_node": "*",
@@ -11340,8 +11345,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc24",
-                    "datestamp": "1540255380",
+                    "version": "8.x-5.0-rc26",
+                    "datestamp": "1541466481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11412,7 +11417,7 @@
         },
         {
             "name": "drupal/webform_bootstrap",
-            "version": "5.0.0-rc24",
+            "version": "5.0.0-rc26",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/webform": "self.version"
@@ -11423,8 +11428,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc24",
-                    "datestamp": "1540255380",
+                    "version": "8.x-5.0-rc26",
+                    "datestamp": "1541466481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11485,7 +11490,7 @@
         },
         {
             "name": "drupal/webform_node",
-            "version": "5.0.0-rc24",
+            "version": "5.0.0-rc26",
             "require": {
                 "drupal/core": "*",
                 "drupal/webform": "self.version"
@@ -11496,8 +11501,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc24",
-                    "datestamp": "1540255380",
+                    "version": "8.x-5.0-rc26",
+                    "datestamp": "1541466481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11558,7 +11563,7 @@
         },
         {
             "name": "drupal/webform_templates",
-            "version": "5.0.0-rc24",
+            "version": "5.0.0-rc26",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/webform": "self.version"
@@ -11569,8 +11574,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc24",
-                    "datestamp": "1540255380",
+                    "version": "8.x-5.0-rc26",
+                    "datestamp": "1541466481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11631,7 +11636,7 @@
         },
         {
             "name": "drupal/webform_ui",
-            "version": "5.0.0-rc24",
+            "version": "5.0.0-rc26",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/webform": "self.version"
@@ -11642,8 +11647,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc24",
-                    "datestamp": "1540255380",
+                    "version": "8.x-5.0-rc26",
+                    "datestamp": "1541466481",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -13036,16 +13041,16 @@
         },
         {
             "name": "symfony/class-loader",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/class-loader.git",
-                "reference": "f31333bdff54c7595f834d510a6d2325573ddb36"
+                "reference": "5605edec7b8f034ead2497ff4aab17bb70d558c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/class-loader/zipball/f31333bdff54c7595f834d510a6d2325573ddb36",
-                "reference": "f31333bdff54c7595f834d510a6d2325573ddb36",
+                "url": "https://api.github.com/repos/symfony/class-loader/zipball/5605edec7b8f034ead2497ff4aab17bb70d558c1",
+                "reference": "5605edec7b8f034ead2497ff4aab17bb70d558c1",
                 "shasum": ""
             },
             "require": {
@@ -13088,20 +13093,20 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:28:39+00:00"
+            "time": "2018-10-31T09:06:03+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "3b2b415d4c48fbefca7dc742aa0a0171bfae4e0b"
+                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/3b2b415d4c48fbefca7dc742aa0a0171bfae4e0b",
-                "reference": "3b2b415d4c48fbefca7dc742aa0a0171bfae4e0b",
+                "url": "https://api.github.com/repos/symfony/console/zipball/1d228fb4602047d7b26a0554e0d3efd567da5803",
+                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803",
                 "shasum": ""
             },
             "require": {
@@ -13157,20 +13162,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:33:53+00:00"
+            "time": "2018-10-30T16:50:50+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.1.6",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90"
+                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
-                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/19090917b848a799cbae4800abf740fe4eb71c1d",
+                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d",
                 "shasum": ""
             },
             "require": {
@@ -13213,20 +13218,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2018-10-31T09:09:42+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "aea20fef4e92396928b5db175788b90234c0270d"
+                "reference": "9c98452ac7fff4b538956775630bc9701f5384ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/aea20fef4e92396928b5db175788b90234c0270d",
-                "reference": "aea20fef4e92396928b5db175788b90234c0270d",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/9c98452ac7fff4b538956775630bc9701f5384ba",
+                "reference": "9c98452ac7fff4b538956775630bc9701f5384ba",
                 "shasum": ""
             },
             "require": {
@@ -13284,20 +13289,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:28:39+00:00"
+            "time": "2018-10-31T10:49:51+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "b2e1f19280c09a42dc64c0b72b80fe44dd6e88fb"
+                "reference": "db9e829c8f34c3d35cf37fcd4cdb4293bc4a2f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b2e1f19280c09a42dc64c0b72b80fe44dd6e88fb",
-                "reference": "b2e1f19280c09a42dc64c0b72b80fe44dd6e88fb",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/db9e829c8f34c3d35cf37fcd4cdb4293bc4a2f14",
+                "reference": "db9e829c8f34c3d35cf37fcd4cdb4293bc4a2f14",
                 "shasum": ""
             },
             "require": {
@@ -13347,20 +13352,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:06:28+00:00"
+            "time": "2018-10-30T16:50:50+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "3a4498236ade473c52b92d509303e5fd1b211ab1"
+                "reference": "5aea7a86ca3203dd7a257e765b4b9c9cfd01c6c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/3a4498236ade473c52b92d509303e5fd1b211ab1",
-                "reference": "3a4498236ade473c52b92d509303e5fd1b211ab1",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5aea7a86ca3203dd7a257e765b4b9c9cfd01c6c0",
+                "reference": "5aea7a86ca3203dd7a257e765b4b9c9cfd01c6c0",
                 "shasum": ""
             },
             "require": {
@@ -13401,20 +13406,20 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T08:48:18+00:00"
+            "time": "2018-10-31T08:57:11+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "a0944a9a1d8845da724236cde9a310964acadb1c"
+                "reference": "4bf0be7c7fe63eff6a5eae2f21c83e77e31a56fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a0944a9a1d8845da724236cde9a310964acadb1c",
-                "reference": "a0944a9a1d8845da724236cde9a310964acadb1c",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/4bf0be7c7fe63eff6a5eae2f21c83e77e31a56fb",
+                "reference": "4bf0be7c7fe63eff6a5eae2f21c83e77e31a56fb",
                 "shasum": ""
             },
             "require": {
@@ -13490,7 +13495,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T12:03:34+00:00"
+            "time": "2018-11-03T10:03:02+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -13729,16 +13734,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1dc2977afa7d70f90f3fefbcd84152813558910e"
+                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1dc2977afa7d70f90f3fefbcd84152813558910e",
-                "reference": "1dc2977afa7d70f90f3fefbcd84152813558910e",
+                "url": "https://api.github.com/repos/symfony/process/zipball/35c2914a9f50519bd207164c353ae4d59182c2cb",
+                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb",
                 "shasum": ""
             },
             "require": {
@@ -13774,7 +13779,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:28:39+00:00"
+            "time": "2018-10-14T17:33:21+00:00"
         },
         {
             "name": "symfony/psr-http-message-bridge",
@@ -13839,7 +13844,7 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
@@ -13916,7 +13921,7 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
@@ -13995,7 +14000,7 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -14063,16 +14068,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "9f8dbf0dceb03815c3160a279bf8cf4f8018a1c5"
+                "reference": "6ab5fee7c0763d90753f37fce6db9fdbca1b1a4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/9f8dbf0dceb03815c3160a279bf8cf4f8018a1c5",
-                "reference": "9f8dbf0dceb03815c3160a279bf8cf4f8018a1c5",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/6ab5fee7c0763d90753f37fce6db9fdbca1b1a4c",
+                "reference": "6ab5fee7c0763d90753f37fce6db9fdbca1b1a4c",
                 "shasum": ""
             },
             "require": {
@@ -14144,11 +14149,11 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:33:53+00:00"
+            "time": "2018-10-14T18:32:13+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -14273,16 +14278,16 @@
         },
         {
             "name": "vardot/varbase",
-            "version": "8.6.1",
+            "version": "8.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase.git",
-                "reference": "d680d20ae84a1b82d1ad723530727c55c39bdd4f"
+                "reference": "a10999e53838a9bce2d0607e891ab95f956e239e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase/zipball/d680d20ae84a1b82d1ad723530727c55c39bdd4f",
-                "reference": "d680d20ae84a1b82d1ad723530727c55c39bdd4f",
+                "url": "https://api.github.com/repos/Vardot/varbase/zipball/a10999e53838a9bce2d0607e891ab95f956e239e",
+                "reference": "a10999e53838a9bce2d0607e891ab95f956e239e",
                 "shasum": ""
             },
             "require": {
@@ -14419,7 +14424,7 @@
                 }
             ],
             "description": "Varbase: The Ultimate Drupal 8 CMS Starter Kit (Bootstrap Ready) | by Vardot",
-            "time": "2018-11-02T14:19:19+00:00"
+            "time": "2018-11-08T18:53:43+00:00"
         },
         {
             "name": "webflo/drupal-finder",
