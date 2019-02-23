@@ -114,16 +114,16 @@
         },
         {
             "name": "caxy/php-htmldiff",
-            "version": "v0.1.8",
+            "version": "v0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caxy/php-htmldiff.git",
-                "reference": "6f39bc3717f1d3f915542e431c6c30e43bfe6b7c"
+                "reference": "4bad5c6a4ecc76954d37764e6a29273b6b7bf1f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/6f39bc3717f1d3f915542e431c6c30e43bfe6b7c",
-                "reference": "6f39bc3717f1d3f915542e431c6c30e43bfe6b7c",
+                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/4bad5c6a4ecc76954d37764e6a29273b6b7bf1f8",
+                "reference": "4bad5c6a4ecc76954d37764e6a29273b6b7bf1f8",
                 "shasum": ""
             },
             "require": {
@@ -166,7 +166,7 @@
                 "diff",
                 "html"
             ],
-            "time": "2019-01-15T19:49:36+00:00"
+            "time": "2019-02-20T18:52:14+00:00"
         },
         {
             "name": "composer/installers",
@@ -2850,7 +2850,8 @@
                     "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-11-07/2914389-11-do-not-test.patch",
                     "Issue #2720101 Label (Title) not set for Views block (exposed filters in Block)": "https://www.drupal.org/files/issues/2720101-53.patch",
                     "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-10-06/2599228-74.patch",
-                    "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
+                    "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch",
+                    "Issue #3023452: Views placeholder texts are not translatable'": "https://www.drupal.org/files/issues/2019-01-14/3023452-5.patch"
                 }
             },
             "autoload": {
@@ -2934,20 +2935,20 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.0.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "302e869ecd1e59fe55663673999fee2ccac5daa8"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "d6da87239b64ba708a5977e7b33b1e009e36b091"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -2955,15 +2956,15 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1549603381",
+                    "version": "8.x-3.2",
+                    "datestamp": "1550728386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "patches_applied": {
-                    "Issue #2820783: Fix Block.php notices and warnings.": "https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch"
+                    "Issue #2820783: Fix Block.php notices and warnings.": "https://www.drupal.org/files/issues/2019-02-18/ctools-Block.php_notices_and_warnings-2820783-51-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3030,7 +3031,7 @@
         },
         {
             "name": "drupal/ctools_block",
-            "version": "3.0.0",
+            "version": "3.2.0",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/ctools": "self.version"
@@ -3041,8 +3042,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1549603381",
+                    "version": "8.x-3.2",
+                    "datestamp": "1550728386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3107,7 +3108,7 @@
         },
         {
             "name": "drupal/ctools_views",
-            "version": "3.0.0",
+            "version": "3.2.0",
             "require": {
                 "drupal/core": "*",
                 "drupal/ctools": "self.version"
@@ -3118,8 +3119,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1549603381",
+                    "version": "8.x-3.2",
+                    "datestamp": "1550728386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6661,7 +6662,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch"
+                    "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch",
+                    "Issue #3033057: Page Manager currently not working with CTools 3.1": "https://www.drupal.org/files/issues/2019-02-23/3033057-13.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6728,6 +6730,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Issue #3031778: Change panels store": "https://www.drupal.org/files/issues/2019-02-21/panels_tempstore-updated-3031778-37.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6865,17 +6870,17 @@
         },
         {
             "name": "drupal/paragraphs_asymmetric_translation_widgets",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs_asymmetric_translation_widgets",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/paragraphs_asymmetric_translation_widgets-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "a06c68fff5833cb9f163980dbd2f656b6c10d0b8"
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_asymmetric_translation_widgets-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "9bfb0a3ee8781004a81e3864737b4f28442e1f7b"
             },
             "require": {
                 "drupal/core": "~8",
@@ -6887,11 +6892,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1542703980",
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1550830384",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7271,25 +7276,24 @@
         },
         {
             "name": "drupal/rabbit_hole",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/rabbit_hole",
-                "reference": "8.x-1.0-beta4"
+                "reference": "8.x-1.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "ef2917a8b53b7576ac8df6bda1a39d93053cd831"
+                "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "93698de4f5e42f19dddab0052494c1ed009af330"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
             "require-dev": {
                 "drupal/file_entity": "*",
-                "drupal/group": "*",
-                "drupal/media_entity": "*"
+                "drupal/group": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -7297,15 +7301,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1506790444",
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1550891284",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Issue #2961738: Ensure getOperation method exists on form": "https://www.drupal.org/files/issues/2018-05-10/rabbit_hole-instance_of_check-2961738-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7326,7 +7327,7 @@
                     "homepage": "https://www.drupal.org/user/536298"
                 },
                 {
-                    "name": "olofjohansson",
+                    "name": "olofbokedal",
                     "homepage": "https://www.drupal.org/user/1198438"
                 },
                 {
@@ -9604,17 +9605,17 @@
         },
         {
             "name": "drupal/varbase_core",
-            "version": "6.7.0",
+            "version": "6.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/varbase_core",
-                "reference": "8.x-6.7"
+                "reference": "8.x-6.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.7.zip",
-                "reference": "8.x-6.7",
-                "shasum": "4c664c32a2deb2efa2e0ca0e07290fcd3ec1756c"
+                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.8.zip",
+                "reference": "8.x-6.8",
+                "shasum": "bb2228f622c72618a4d80a131a2f6e5c0956b99e"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -9629,7 +9630,7 @@
                 "drupal/block_class": "~1.0",
                 "drupal/bootstrap_layouts": "~5.0",
                 "drupal/captcha": "~1.0",
-                "drupal/coffee": "~1.0",
+                "drupal/coffee": "1.0-beta2",
                 "drupal/color_field": "~2.0",
                 "drupal/config_filter": "~1.0",
                 "drupal/config_ignore": "~2.0",
@@ -9637,7 +9638,7 @@
                 "drupal/config_update": "~1.0",
                 "drupal/content_lock": "~1.0",
                 "drupal/core": "~8.6",
-                "drupal/ctools": "3.0",
+                "drupal/ctools": "3.2",
                 "drupal/ctools_block": "*",
                 "drupal/ctools_views": "*",
                 "drupal/default_content": "1.0-alpha7",
@@ -9645,7 +9646,7 @@
                 "drupal/diff": "~1.0",
                 "drupal/drd_agent": "~3.0",
                 "drupal/drupal-library-installer-plugin": "^0.3",
-                "drupal/ds": "~3.0",
+                "drupal/ds": "3.2",
                 "drupal/entity": "~1.0",
                 "drupal/entity_clone": "~1.0",
                 "drupal/entity_reference_revisions": "~1.0",
@@ -9654,7 +9655,7 @@
                 "drupal/extlink": "~1.0",
                 "drupal/fast_404": "~1.0",
                 "drupal/features": "~3.0",
-                "drupal/field_group": "~3.0",
+                "drupal/field_group": "3.0-beta1",
                 "drupal/honeypot": "~1.0",
                 "drupal/inline_entity_form": "~1.0",
                 "drupal/l10n_client": "*",
@@ -9671,10 +9672,10 @@
                 "drupal/menu_block": "~1.0",
                 "drupal/menu_position": "~1.0",
                 "drupal/node_edit_protection": "~1.0",
-                "drupal/page_manager": "~4.0",
-                "drupal/panels": "~4.0",
+                "drupal/page_manager": "4.0-beta3",
+                "drupal/panels": "4.3",
                 "drupal/password_policy": "~3.0",
-                "drupal/persistent_login": "~1.0",
+                "drupal/persistent_login": "1.1",
                 "drupal/rabbit_hole": "~1.0",
                 "drupal/recaptcha": "~2.0",
                 "drupal/responsive_preview": "~1.0",
@@ -9716,8 +9717,8 @@
                     "dev-8.x-6.x": "8.6.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-6.7",
-                    "datestamp": "1550701684",
+                    "version": "8.x-6.8",
+                    "datestamp": "1550941684",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9741,7 +9742,8 @@
                         "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-11-07/2914389-11-do-not-test.patch",
                         "Issue #2720101 Label (Title) not set for Views block (exposed filters in Block)": "https://www.drupal.org/files/issues/2720101-53.patch",
                         "Issue #2599228: Programmatically created translatable content type returns SQL error on content creation": "https://www.drupal.org/files/issues/2018-10-06/2599228-74.patch",
-                        "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
+                        "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/patch_empty_fix.patch",
+                        "Issue #3023452: Views placeholder texts are not translatable'": "https://www.drupal.org/files/issues/2019-01-14/3023452-5.patch"
                     },
                     "drupal/coffee": {
                         "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8": "https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch",
@@ -9755,23 +9757,21 @@
                         "Issue #2899530: Hide user^s local task": "https://www.drupal.org/files/issues/persistent_login-user_task_permission-2899530-6.patch"
                     },
                     "drupal/ctools": {
-                        "Issue #2820783: Fix Block.php notices and warnings.": "https://www.drupal.org/files/issues/fixblockpager-2820783-27.patch"
+                        "Issue #2820783: Fix Block.php notices and warnings.": "https://www.drupal.org/files/issues/2019-02-18/ctools-Block.php_notices_and_warnings-2820783-51-D8.patch"
                     },
                     "drupal/ds": {
                         "Issue #2920868: Fixed fatal errors when we have missing layouts, on an update.": "https://www.drupal.org/files/issues/error-when-layout-is-removed-2920868-4.patch",
                         "Issue #2966959: Value Conflict with Layout Builder": "https://www.drupal.org/files/issues/2018-04-27/2966959-ds-namespace_form_for_layout_builder-4.patch"
                     },
-                    "drupal/rabbit_hole": {
-                        "Issue #2961738: Ensure getOperation method exists on form": "https://www.drupal.org/files/issues/2018-05-10/rabbit_hole-instance_of_check-2961738-5.patch"
-                    },
                     "drupal/login_destination": {
                         "Issue #2947616: Fixed SetOptions on null causing error.": "https://www.drupal.org/files/issues/2018-03-09/toolbar_alter_error-2947616-11.patch"
                     },
-                    "drupal/views_bulk_operations": {
-                        "Issue #2952498: Fixed [VBO) Fatal error when executing simple actions on Adminimal theme": "https://www.drupal.org/files/issues/2018-09-19/views_bulk_operations-theme_error-2952498-29.patch"
-                    },
                     "drupal/page_manager": {
-                        "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch"
+                        "Issue #2665328: Variants take entity label not the variant title": "https://www.drupal.org/files/issues/2018-12-12/2665328-variants-take-entity-label-87.patch",
+                        "Issue #3033057: Page Manager currently not working with CTools 3.1": "https://www.drupal.org/files/issues/2019-02-23/3033057-13.patch"
+                    },
+                    "drupal/panels": {
+                        "Issue #3031778: Change panels store": "https://www.drupal.org/files/issues/2019-02-21/panels_tempstore-updated-3031778-37.patch"
                     },
                     "drupal/field_group": {
                         "Issue #2921228: Accordion does not work": "https://www.drupal.org/files/issues/field_group_accordion-2921228-3.patch"
@@ -10705,17 +10705,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "50c5778770f3a92e38ecf664301b77146e3cc931"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "3ec848b4f235720d05cb9713ea80a86415b6909f"
             },
             "require": {
                 "drupal/core": "^8.4"
@@ -10726,8 +10726,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1530516821",
+                    "version": "8.x-2.5",
+                    "datestamp": "1550740384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10737,9 +10737,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Issue #2952498: Fixed [VBO) Fatal error when executing simple actions on Adminimal theme": "https://www.drupal.org/files/issues/2018-09-19/views_bulk_operations-theme_error-2952498-29.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -12104,10 +12101,10 @@
         },
         {
             "name": "npm-asset/ace-builds",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ace-builds/-/ace-builds-1.4.2.tgz"
+                "url": "https://registry.npmjs.org/ace-builds/-/ace-builds-1.4.3.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -14062,16 +14059,16 @@
         },
         {
             "name": "vardot/varbase-updater",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase-updater.git",
-                "reference": "6ff575c962c95c8026f508bbf10f3023961cf100"
+                "reference": "64ed8d776225e2fad281fa2b226a8d1eda72f64b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase-updater/zipball/6ff575c962c95c8026f508bbf10f3023961cf100",
-                "reference": "6ff575c962c95c8026f508bbf10f3023961cf100",
+                "url": "https://api.github.com/repos/Vardot/varbase-updater/zipball/64ed8d776225e2fad281fa2b226a8d1eda72f64b",
+                "reference": "64ed8d776225e2fad281fa2b226a8d1eda72f64b",
                 "shasum": ""
             },
             "require": {
@@ -14095,7 +14092,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Varbase Updater",
-            "time": "2019-01-14T18:36:21+00:00"
+            "time": "2019-02-23T14:32:32+00:00"
         },
         {
             "name": "webflo/drupal-finder",
