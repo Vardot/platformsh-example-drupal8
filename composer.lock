@@ -1188,17 +1188,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.26.0",
+            "version": "1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-1.26"
+                "reference": "8.x-1.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.26.zip",
-                "reference": "8.x-1.26",
-                "shasum": "7be9f91008bf17cf49b43d1c8e2211e7a8e40ce4"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.27.zip",
+                "reference": "8.x-1.27",
+                "shasum": "fed1fbbdf8f805b1da63d73e7e2c54750f354d61"
             },
             "require": {
                 "drupal/core": "*"
@@ -1209,8 +1209,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.26",
-                    "datestamp": "1549559402",
+                    "version": "8.x-1.27",
+                    "datestamp": "1558552081",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1318,17 +1318,17 @@
         },
         {
             "name": "drupal/adminimal_theme",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/adminimal_theme.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "af9cbce473d0bd9590889992200ed175cb7e1159"
+                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "fb4457015d743faafecaa0776d2bebf2829a6738"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1339,8 +1339,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1547996580",
+                    "version": "8.x-1.5",
+                    "datestamp": "1558584484",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2767,16 +2767,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.7.1",
+            "version": "8.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3"
+                "reference": "31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/969f24810fb31eac71dd624de593f551bd6dc2a3",
-                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3",
+                "url": "https://api.github.com/repos/drupal/core/zipball/31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9",
+                "reference": "31c01fe3b4eb8817e8ef127382a67c9e9d78e1a9",
                 "shasum": ""
             },
             "require": {
@@ -2991,11 +2991,7 @@
                     "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                     "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                     "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                    "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/2018-12-10/core--getDerivatives-Invalid-argument-foreach--2893892-11-d8.patch",
-                    "Issue #3052492: Fixed Failed while updating from 8.6.x to 8.7.x as ViewsEntitySchemaSubscriber should not make an entity update fail if a view cannot be resaved": "https://www.drupal.org/files/issues/2019-05-06/3052492-13.patch",
-                    "Issue #3052140: Cannot convert custom entity types from non-revisionable to revisionable with pre-8.7.x compatible methods": "https://www.drupal.org/files/issues/2019-05-04/3052140-13.patch",
-                    "Issue #3039586: Cannot rename tmp menu_link_content_revision to menu_link_content_revision": "https://www.drupal.org/files/issues/2019-05-02/3039586-22.patch",
-                    "Issue #3052431: layout_builder_post_update_make_layout_untranslatable() still attempts to query all revisions for non-revisionable entities": "https://www.drupal.org/files/issues/2019-05-06/3052431-7.patch"
+                    "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/2018-12-10/core--getDerivatives-Invalid-argument-foreach--2893892-11-d8.patch"
                 }
             },
             "autoload": {
@@ -3019,7 +3015,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-05-08T16:00:55+00:00"
+            "time": "2019-05-23T07:22:46+00:00"
         },
         {
             "name": "drupal/crop",
@@ -9962,7 +9958,7 @@
                 },
                 "drupal": {
                     "version": "8.x-6.2",
-                    "datestamp": "1554894785",
+                    "datestamp": "1554894882",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9999,17 +9995,17 @@
         },
         {
             "name": "drupal/varbase_core",
-            "version": "6.16.0",
+            "version": "6.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_core.git",
-                "reference": "8.x-6.16"
+                "reference": "8.x-6.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.16.zip",
-                "reference": "8.x-6.16",
-                "shasum": "bd9b51930e4e2a395db2759e47ac44a35a3206ea"
+                "url": "https://ftp.drupal.org/files/projects/varbase_core-8.x-6.17.zip",
+                "reference": "8.x-6.17",
+                "shasum": "321b7d2e1f3c9dad900bdda7986a775422638d41"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -10117,8 +10113,8 @@
                     "dev-8.x-6.x": "8.6.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-6.16",
-                    "datestamp": "1558484286",
+                    "version": "8.x-6.17",
+                    "datestamp": "1558629485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10140,11 +10136,7 @@
                         "Issue #2815221: Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                         "Issue #1356276: Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                         "Issue #2914389: Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                        "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/2018-12-10/core--getDerivatives-Invalid-argument-foreach--2893892-11-d8.patch",
-                        "Issue #3052492: Fixed Failed while updating from 8.6.x to 8.7.x as ViewsEntitySchemaSubscriber should not make an entity update fail if a view cannot be resaved": "https://www.drupal.org/files/issues/2019-05-06/3052492-13.patch",
-                        "Issue #3052140: Cannot convert custom entity types from non-revisionable to revisionable with pre-8.7.x compatible methods": "https://www.drupal.org/files/issues/2019-05-04/3052140-13.patch",
-                        "Issue #3039586: Cannot rename tmp menu_link_content_revision to menu_link_content_revision": "https://www.drupal.org/files/issues/2019-05-02/3039586-22.patch",
-                        "Issue #3052431: layout_builder_post_update_make_layout_untranslatable() still attempts to query all revisions for non-revisionable entities": "https://www.drupal.org/files/issues/2019-05-06/3052431-7.patch"
+                        "Issue #2893892: Fixed Warning Invalid argument supplied for foreach() in Drupal": "https://www.drupal.org/files/issues/2018-12-10/core--getDerivatives-Invalid-argument-foreach--2893892-11-d8.patch"
                     },
                     "drupal/coffee": {
                         "Issue #2815381: Coffee breaks whole page when using right to left (rtl) languages in drupal 8": "https://www.drupal.org/files/issues/coffee-coffee_breaks_page_with_rtl-2815381-6.patch",
@@ -12483,22 +12475,23 @@
         },
         {
             "name": "league/oauth2-linkedin",
-            "version": "5.0.1",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-linkedin.git",
-                "reference": "84613702fc21ea44fc6a5f493b95c20224fcf952"
+                "reference": "1cbe8756539e37da0f0ed2ab9ae03ada25942596"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-linkedin/zipball/84613702fc21ea44fc6a5f493b95c20224fcf952",
-                "reference": "84613702fc21ea44fc6a5f493b95c20224fcf952",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-linkedin/zipball/1cbe8756539e37da0f0ed2ab9ae03ada25942596",
+                "reference": "1cbe8756539e37da0f0ed2ab9ae03ada25942596",
                 "shasum": ""
             },
             "require": {
                 "league/oauth2-client": "^2.0"
             },
             "require-dev": {
+                "ext-json": "*",
                 "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~2.0"
@@ -12534,7 +12527,7 @@
                 "oauth",
                 "oauth2"
             ],
-            "time": "2019-05-11T20:17:01+00:00"
+            "time": "2019-05-22T11:40:46+00:00"
         },
         {
             "name": "lsolesen/pel",
@@ -14852,16 +14845,16 @@
         },
         {
             "name": "vardot/varbase",
-            "version": "8.6.10",
+            "version": "8.6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase.git",
-                "reference": "089269f0a8683e891c0d3ed9917671b2adfeb607"
+                "reference": "cdec42cf02b287e4a64c9ea0663e7147936d7b15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase/zipball/089269f0a8683e891c0d3ed9917671b2adfeb607",
-                "reference": "089269f0a8683e891c0d3ed9917671b2adfeb607",
+                "url": "https://api.github.com/repos/Vardot/varbase/zipball/cdec42cf02b287e4a64c9ea0663e7147936d7b15",
+                "reference": "cdec42cf02b287e4a64c9ea0663e7147936d7b15",
                 "shasum": ""
             },
             "require": {
@@ -14990,7 +14983,7 @@
                 }
             ],
             "description": "Varbase: The Ultimate Drupal 8 CMS Starter Kit (Bootstrap Ready) | by Vardot",
-            "time": "2019-05-22T03:52:13+00:00"
+            "time": "2019-05-23T16:36:15+00:00"
         },
         {
             "name": "vardot/varbase-updater",
