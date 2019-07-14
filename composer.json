@@ -1,6 +1,6 @@
 {
   "name": "vardot/varbase-project",
-  "description": "Project template for Varbase 8.4.x projects with composer",
+  "description": "Project template for Varbase distribution.",
   "type": "project",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -36,13 +36,16 @@
     "drupal/drupal-library-installer-plugin": "^0.3",
     "webflo/drupal-finder": "~1.0",
     "webmozart/path-util": "~2.0",
-    "vardot/varbase": "~8.6.0",
+    "vardot/varbase": "~8.7.0",
     "vardot/varbase-updater": "~1.0"
   },
+  "replace": {
+    "ajaxorg/ace-builds": "*"
+  },
   "autoload": {
-      "classmap": [
-          "scripts/composer/ScriptHandler.php"
-      ]
+    "classmap": [
+        "scripts/composer/ScriptHandler.php"
+    ]
   },
   "config": {
     "bin-dir": "bin/",
@@ -80,7 +83,7 @@
       "we will revert to using (cweagans/composer-patches) without this override."
     ],
     "branch-alias": {
-      "dev-8.x-6.x": "8.6.x-dev"
+      "dev-8.x-7.x": "8.7.x-dev"
     },
     "installer-types": [
       "bower-asset",
@@ -93,6 +96,7 @@
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "web/libraries/slick": ["npm-asset/slick-carousel"],
       "web/libraries/ace": ["npm-asset/ace-builds"],
+      "web/libraries/masonry": ["npm-asset/masonry-layout"],
       "web/libraries/{$name}": [
         "type:drupal-library",
         "type:bower-asset",
@@ -105,10 +109,16 @@
     "drupal-libraries": {
       "library-directory": "web/libraries",
       "libraries": [
-          {"name": "dropzone","package": "npm-asset/dropzone"},
-          {"name": "blazy", "package": "npm-asset/blazy"},
-          {"name": "slick", "package": "npm-asset/slick-carousel"},
-          {"name": "ace", "package": "npm-asset/ace-builds"}
+        {"name": "dropzone","package": "npm-asset/dropzone"},
+        {"name": "blazy", "package": "npm-asset/blazy"},
+        {"name": "slick", "package": "npm-asset/slick-carousel"},
+        {"name": "ace", "package": "npm-asset/ace-builds"},
+        {"name": "chartjs", "package": "bower-asset/chartjs"},
+        {"name": "c3","package": "bower-asset/c3"},
+        {"name": "d3", "package": "bower-asset/d3"},
+        {"name": "masonry", "package": "npm-asset/masonry-layout"},
+        {"name": "imagesloaded", "package": "npm-asset/imagesloaded"},
+        {"name": "swagger-ui", "package": "swagger-api/swagger-ui"}
       ]
     },
     "enable-patching": true,
