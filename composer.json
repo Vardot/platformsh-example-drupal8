@@ -1,8 +1,8 @@
 {
-  "name": "vardot/varbase-project",
+  "name": "vardot/platformsh-example-varbase",
   "description": "Project template for Varbase distribution.",
-  "type": "project",
-  "license": "GPL-2.0-or-later",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Vardot",
@@ -11,14 +11,14 @@
     }
   ],
   "support": {
-    "issues": "http://drupal.org/project/issues/varbase",
-    "source": "http://cgit.drupalcode.org/varbase"
+  "issues": "http://drupal.org/project/issues/varbase",
+  "source": "http://cgit.drupalcode.org/varbase"
   },
   "repositories": {
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-      },
+    },
     "assets": {
       "type": "composer",
       "url": "https://asset-packagist.org"
@@ -32,46 +32,54 @@
     "composer/installers": "~1.0",
     "oomphinc/composer-installers-extender": "~1.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal-composer/drupal-scaffold": "~2.0",
+    "drupal/core-composer-scaffold": "^8.8.0",
+    "drupal/core-project-message": "^8.8.0",
     "drupal/drupal-library-installer-plugin": "^0.3",
     "webflo/drupal-finder": "~1.0",
+    "drupal/redis": "^1.2",
+    "drupal/console": "^1.9",
+    "drush/drush": "^10.1",
+    "platformsh/config-reader": "^2.3",
     "webmozart/path-util": "~2.0",
-    "vardot/varbase": "~8.7.0",
+    "vardot/varbase": "~8.8.0",
     "vardot/varbase-updater": "~1.0"
   },
   "replace": {
     "ajaxorg/ace-builds": "*"
   },
-  "autoload": {
-    "classmap": [
-        "scripts/composer/ScriptHandler.php"
-    ]
-  },
-  "config": {
-    "bin-dir": "bin/",
-    "secure-http": false,
-    "optimize-autoloader": true,
-    "preferred-install": {
-      "drupal/core": "dist"
-    }
-  },
-  "scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-      "@composer drupal-scaffold"
-    ],
-    "post-update-cmd": [
-      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-    ],
-    "post-drupal-scaffold-cmd": ["Varbase\\composer\\ScriptHandler::postDrupalScaffoldProcedure"]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "conflict": {
     "drupal/drupal": "*"
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+      "sort-packages": true
+  },
   "extra": {
+    "drupal-scaffold": {
+      "locations": {
+          "web-root": "web/"
+      }
+    },
+    "drupal-core-project-message": {
+        "include-keys": ["homepage", "support"],
+        "post-create-project-cmd-message": [
+            "<bg=blue;fg=white>                                                         </>",
+            "<bg=blue;fg=white>  Congratulations, you’ve installed the Varbase codebase </>",
+            "<bg=blue;fg=white>  from the vardot/platformsh-example-varbase template!   </>",
+            "<bg=blue;fg=white>                                                         </>",
+            "",
+            "<bg=yellow;fg=black>Next steps</>:",
+
+            "  * Install the site: https://www.drupal.org/docs/8/install",
+            "  * Read the user guide: https://docs.varbase.vardot.com",
+            "  * Get support: https://www.vardot.com/en/form/get-support-varbase",
+            "  * Join Our Slack Team for Feedback and Support:",
+            "      http://slack.varbase.vardot.com",
+            "  * Remove the plugin that prints this message:",
+            "      composer remove drupal/core-project-message"
+        ]
+    },
     "_readme": [
       "NOTICE: We're now using composer patches from Vardot repository to suggest",
       "several fixes and better handling of patches in your Drupal project.",
@@ -83,7 +91,7 @@
       "we will revert to using (cweagans/composer-patches) without this override."
     ],
     "branch-alias": {
-      "dev-8.x-7.x": "8.7.x-dev"
+      "dev-8.x-8.x": "8.8.x-dev"
     },
     "installer-types": [
       "bower-asset",
@@ -104,7 +112,7 @@
       ],
       "web/modules/custom/{$name}": ["type:drupal-custom-module"],
       "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-      "drush/contrib/{$name}": ["type:drupal-drush"]
+      "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {
       "library-directory": "web/libraries",
