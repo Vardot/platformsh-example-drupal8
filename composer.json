@@ -44,6 +44,19 @@
     "vardot/varbase": "~8.8.0",
     "vardot/varbase-updater": "~1.0"
   },
+  "require-dev": {
+    "drupal/coder": "~8.0",
+    "drupal/drupal-extension": "~3.0",
+    "phing/phing": "~2.0",
+    "behat/behat": "~3.0",
+    "behat/mink": "~1.0",
+    "behat/mink-extension": "~2.0",
+    "behat/mink-goutte-driver": "~1.0",
+    "behat/mink-zombie-driver": "~1.0",
+    "behat/mink-selenium2-driver": "~1.0",
+    "behatch/contexts": "~3.0",
+    "emuse/behat-html-formatter": "^0.2.0"
+  },
   "replace": {
     "ajaxorg/ace-builds": "*"
   },
