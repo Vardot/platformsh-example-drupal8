@@ -5970,7 +5970,7 @@
         },
         {
             "name": "drupal/entity_browser_generic_embed",
-            "version": "7.12.0",
+            "version": "7.14.0",
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/entity_browser": "*",
@@ -5982,8 +5982,8 @@
                     "dev-7.x": "7.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-7.12",
-                    "datestamp": "1579009983",
+                    "version": "8.x-7.14",
+                    "datestamp": "1581243489",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6651,23 +6651,23 @@
         },
         {
             "name": "drupal/file_mdm",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/file_mdm.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/file_mdm-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "7f354aec6f89e3141c2aa1fb3747ad5d4578c13f"
+                "url": "https://ftp.drupal.org/files/projects/file_mdm-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "3dba101346aa1fa6fb1078ce32d12a4827a3e737"
             },
             "require": {
-                "drupal/core": "~8.0",
-                "lsolesen/pel": "0.9.6",
-                "phenx/php-font-lib": "0.5",
-                "php": ">=5.6"
+                "drupal/core": "^8.8 || ^9",
+                "lsolesen/pel": "^0.9.7",
+                "phenx/php-font-lib": "^0.5.1",
+                "php": ">=7"
             },
             "require-dev": {
                 "drupal/image_effects": "*"
@@ -6675,11 +6675,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1488273785",
+                    "version": "8.x-2.0",
+                    "datestamp": "1576506188",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6697,46 +6697,6 @@
                 }
             ],
             "description": "Provides a service to manage file metadata.",
-            "homepage": "https://www.drupal.org/project/file_mdm",
-            "support": {
-                "source": "https://git.drupalcode.org/project/file_mdm"
-            }
-        },
-        {
-            "name": "drupal/file_mdm_exif",
-            "version": "1.1.0",
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/file_mdm": "self.version"
-            },
-            "require-dev": {
-                "drupal/image_effects": "*"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1488273785",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "mondrake",
-                    "homepage": "https://www.drupal.org/user/1307444"
-                }
-            ],
-            "description": "Provides a file metadata plugin for EXIF image information.",
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
@@ -7338,32 +7298,32 @@
         },
         {
             "name": "drupal/imagemagick",
-            "version": "2.6.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imagemagick.git",
-                "reference": "8.x-2.6"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/imagemagick-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "1696ef42d06461f420ef7761bc4a5d2d3bf6ac67"
+                "url": "https://ftp.drupal.org/files/projects/imagemagick-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "8e47abe42fb0cf3818c925919e9603f56a2b7978"
             },
             "require": {
-                "drupal/core": "^8.3",
-                "drupal/file_mdm": "^1.1",
-                "drupal/file_mdm_exif": "^1.1",
-                "fileeye/mimemap": "^1.1.1"
+                "drupal/core": "^8.8 || ^9",
+                "drupal/file_mdm": "^2",
+                "drupal/sophron": "^1",
+                "php": ">=7"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1566506585",
+                    "version": "8.x-3.0",
+                    "datestamp": "1578074883",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10331,20 +10291,20 @@
         },
         {
             "name": "drupal/redis",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/redis.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "6b8847a0816a6e400d495aed1e9dde4c594d6e2b"
+                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "d3352542732103a5822181df8ba2313a1d4f0aba"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "suggest": {
                 "predis/predis": "^1.1.1"
@@ -10355,8 +10315,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1568275684",
+                    "version": "8.x-1.3",
+                    "datestamp": "1581183007",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10508,17 +10468,17 @@
         },
         {
             "name": "drupal/revision_log_default",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/revision_log_default.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/revision_log_default-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "b6798f54b6a15602f719a6e5e55cd8f0917850d0"
+                "url": "https://ftp.drupal.org/files/projects/revision_log_default-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "6c6863d37e45afa2634289e505e596e382e95bcb"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -10529,8 +10489,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1499981344",
+                    "version": "8.x-1.1",
+                    "datestamp": "1581290299",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11963,6 +11923,59 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/sandbox-utkarsh-dixit-2841076",
                 "issues": "https://www.drupal.org/project/issues/2841076"
+            }
+        },
+        {
+            "name": "drupal/sophron",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sophron.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sophron-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "8cbfd6df04c2ae47ca4a8c35644644bbf54dd25b"
+            },
+            "require": {
+                "drupal/core": "^8.4 || ^9",
+                "fileeye/mimemap": "^1.1.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1576526880",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\sophron\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                }
+            ],
+            "description": "Provides an extensive MIME types management API",
+            "homepage": "https://www.drupal.org/project/sophron",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sophron"
             }
         },
         {
@@ -13840,17 +13853,17 @@
         },
         {
             "name": "drupal/varbase_media",
-            "version": "7.12.0",
+            "version": "7.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_media.git",
-                "reference": "8.x-7.12"
+                "reference": "8.x-7.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_media-8.x-7.12.zip",
-                "reference": "8.x-7.12",
-                "shasum": "988dd2a85941a8c049ff0d0770f61ef39b053598"
+                "url": "https://ftp.drupal.org/files/projects/varbase_media-8.x-7.14.zip",
+                "reference": "8.x-7.14",
+                "shasum": "40d7dde168440ff4e8d307377407691720fd786d"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -13872,7 +13885,7 @@
                 "drupal/entity_embed": "1.0",
                 "drupal/focal_point": "~1.0",
                 "drupal/imageapi_optimize": "~2.0",
-                "drupal/imagemagick": "~2.0",
+                "drupal/imagemagick": "~3.0",
                 "drupal/inline_entity_form": "~1.0",
                 "drupal/media_entity_instagram": "~2.0",
                 "drupal/media_entity_twitter": "~2.0",
@@ -13900,8 +13913,8 @@
                     "dev-8.x-7.x": "8.7.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-7.12",
-                    "datestamp": "1579009983",
+                    "version": "8.x-7.14",
+                    "datestamp": "1581243489",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14685,17 +14698,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "8.x-3.3"
+                "reference": "8.x-3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "480fec7c4a21ce8a57328af45735b5086a5bd178"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "549eb149f82fbf30e975155a14cd7a0d4653dfe9"
             },
             "require": {
                 "drupal/core": "~8.5"
@@ -14706,8 +14719,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1570032485",
+                    "version": "8.x-3.4",
+                    "datestamp": "1580924754",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15238,16 +15251,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.2.0",
+            "version": "10.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "f068021102caf90042f83a280c9316eb7e29ca12"
+                "reference": "756e7a9e82bfe424f02ff5eb006bf514b9a4365d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/f068021102caf90042f83a280c9316eb7e29ca12",
-                "reference": "f068021102caf90042f83a280c9316eb7e29ca12",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/756e7a9e82bfe424f02ff5eb006bf514b9a4365d",
+                "reference": "756e7a9e82bfe424f02ff5eb006bf514b9a4365d",
                 "shasum": ""
             },
             "require": {
@@ -15272,16 +15285,15 @@
                 "webmozart/path-util": "^2.1.0"
             },
             "require-dev": {
-                "composer/installers": "^1.2",
+                "composer/installers": "^1.7",
                 "cweagans/composer-patches": "~1.0",
                 "drupal/alinks": "1.0.0",
+                "drupal/core-recommended": "^8.8",
                 "g1a/composer-test-scenarios": "^3",
                 "lox/xhprof": "dev-master",
                 "phpunit/phpunit": "^4.8.36 || ^6.1",
                 "squizlabs/php_codesniffer": "^2.7 || ^3",
-                "vlucas/phpdotenv": "^2.4",
-                "webflo/drupal-core-require-dev": "8.7.x-dev",
-                "webflo/drupal-core-strict": "8.7.x-dev"
+                "vlucas/phpdotenv": "^2.4"
             },
             "bin": [
                 "drush"
@@ -15364,7 +15376,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2020-01-25T17:04:39+00:00"
+            "time": "2020-02-07T17:53:36+00:00"
         },
         {
             "name": "e0ipso/shaper",
@@ -16673,26 +16685,26 @@
         },
         {
             "name": "lsolesen/pel",
-            "version": "0.9.6",
+            "version": "0.9.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lsolesen/pel.git",
-                "reference": "c9e3919f5db3b85c3c422d4f8d448dbcb2a87a23"
+                "url": "https://github.com/pel/pel.git",
+                "reference": "0e7b8717ea681fc682749c4b73226c4c6fcc7362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lsolesen/pel/zipball/c9e3919f5db3b85c3c422d4f8d448dbcb2a87a23",
-                "reference": "c9e3919f5db3b85c3c422d4f8d448dbcb2a87a23",
+                "url": "https://api.github.com/repos/pel/pel/zipball/0e7b8717ea681fc682749c4b73226c4c6fcc7362",
+                "reference": "0e7b8717ea681fc682749c4b73226c4c6fcc7362",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.0.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-gd": "*",
-                "phpunit/phpunit": "5.7.*",
+                "phpunit/phpunit": ">=4.8.36 <8",
                 "satooshi/php-coveralls": "1.0.*",
-                "squizlabs/php_codesniffer": "3.0.0RC3"
+                "squizlabs/php_codesniffer": "^3.0.0"
             },
             "type": "library",
             "autoload": {
@@ -16719,12 +16731,12 @@
                 }
             ],
             "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
-            "homepage": "http://lsolesen.github.com/pel/",
+            "homepage": "http://pel.github.com/pel/",
             "keywords": [
                 "exif",
                 "image"
             ],
-            "time": "2017-02-03T11:58:58+00:00"
+            "time": "2019-12-03T15:35:01+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -17325,16 +17337,16 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "19ad2bebc35be028fcc0221025fcbf3d436a3962"
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/19ad2bebc35be028fcc0221025fcbf3d436a3962",
-                "reference": "19ad2bebc35be028fcc0221025fcbf3d436a3962",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/760148820110a1ae0936e5cc35851e25a938bc97",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97",
                 "shasum": ""
             },
             "require-dev": {
@@ -17358,7 +17370,7 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "time": "2017-02-11T10:58:43+00:00"
+            "time": "2017-09-13T16:14:37+00:00"
         },
         {
             "name": "platformsh/config-reader",
@@ -19732,16 +19744,16 @@
         },
         {
             "name": "vardot/varbase",
-            "version": "8.8.2",
+            "version": "8.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase.git",
-                "reference": "aeada54af6c86bc4691f3ce8922f06c82fc52bda"
+                "reference": "d40bb8d79b26438bea6ad3afd5c468c736c075a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase/zipball/aeada54af6c86bc4691f3ce8922f06c82fc52bda",
-                "reference": "aeada54af6c86bc4691f3ce8922f06c82fc52bda",
+                "url": "https://api.github.com/repos/Vardot/varbase/zipball/d40bb8d79b26438bea6ad3afd5c468c736c075a2",
+                "reference": "d40bb8d79b26438bea6ad3afd5c468c736c075a2",
                 "shasum": ""
             },
             "require": {
@@ -19905,7 +19917,7 @@
                 }
             ],
             "description": "Varbase: The Ultimate Drupal 8 CMS Starter Kit (Bootstrap Ready) | by Vardot",
-            "time": "2020-02-04T18:26:55+00:00"
+            "time": "2020-02-09T10:26:49+00:00"
         },
         {
             "name": "vardot/varbase-updater",
@@ -20312,16 +20324,16 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "3.6.0",
+            "version": "v3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "de002f40188e74fcd442c5a6480cee76a9cfc84a"
+                "reference": "9bfe195b4745c32e068af03fa4df9558b4916d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/de002f40188e74fcd442c5a6480cee76a9cfc84a",
-                "reference": "de002f40188e74fcd442c5a6480cee76a9cfc84a",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/9bfe195b4745c32e068af03fa4df9558b4916d30",
+                "reference": "9bfe195b4745c32e068af03fa4df9558b4916d30",
                 "shasum": ""
             },
             "require": {
@@ -20388,7 +20400,7 @@
                 "symfony",
                 "testing"
             ],
-            "time": "2020-02-04T16:26:31+00:00"
+            "time": "2020-02-06T09:54:48+00:00"
         },
         {
             "name": "behat/gherkin",
