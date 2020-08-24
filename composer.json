@@ -1,8 +1,8 @@
 {
   "name": "vardot/platformsh-example-varbase",
   "description": "Project template for Varbase distribution.",
-    "type": "project",
-    "license": "GPL-2.0-or-later",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Vardot",
@@ -11,8 +11,8 @@
     }
   ],
   "support": {
-  "issues": "http://drupal.org/project/issues/varbase",
-  "source": "http://cgit.drupalcode.org/varbase"
+    "issues": "http://drupal.org/project/issues/varbase",
+    "source": "http://cgit.drupalcode.org/varbase"
   },
   "repositories": {
     "drupal": {
@@ -60,16 +60,24 @@
   "replace": {
     "ajaxorg/ace-builds": "*"
   },
-  "conflict": {
-    "drupal/drupal": "*"
+  "config": {
+    "bin-dir": "bin/",
+    "secure-http": false,
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "drupal/core": "dist"
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "config": {
-      "sort-packages": true
+  "conflict": {
+    "drupal/drupal": "*"
   },
   "extra": {
     "drupal-scaffold": {
+      "allowed-packages": [
+        "drupal/core"
+      ],
       "locations": {
           "web-root": "web/"
       }
@@ -117,6 +125,7 @@
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "web/libraries/slick": ["npm-asset/slick-carousel"],
       "web/libraries/ace": ["npm-asset/ace-builds"],
+      "web/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
       "web/libraries/masonry": ["npm-asset/masonry-layout"],
       "web/libraries/{$name}": [
         "type:drupal-library",
@@ -137,6 +146,7 @@
         {"name": "chartjs", "package": "bower-asset/chartjs"},
         {"name": "c3","package": "bower-asset/c3"},
         {"name": "d3", "package": "bower-asset/d3"},
+        {"name": "jquery-ui-touch-punch", "package": "bower-asset/jqueryui-touch-punch"},
         {"name": "masonry", "package": "npm-asset/masonry-layout"},
         {"name": "imagesloaded", "package": "npm-asset/imagesloaded"},
         {"name": "swagger-ui", "package": "swagger-api/swagger-ui"}
@@ -145,7 +155,7 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patchLevel": {
-       "drupal/core": "-p2"
+      "drupal/core": "-p2"
     }
   }
 }
