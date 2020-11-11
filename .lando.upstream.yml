@@ -1,0 +1,76 @@
+# This file sets some good defaults for local development using this Platform.sh
+# template with Lando.
+#
+# Note that you should not edit this file so it can continue to receive upstream
+# updates. If you wish to change the values below then override them in your
+# normal .lando.yml.
+
+# These both allow you to test this template without needing a site on Platform.sh
+# However you will want to replace them in your .lando.yml
+name: platformsh-varbase
+recipe: platformsh
+
+config:
+  webroot: docroot
+  php: '7.3'
+  drush: ^10
+  # This section overrides Platform.sh configuration with values that make more
+  # sense for local development.
+  #
+  # Note that "app" is the name of the application defined in your
+  # .platform.app.yaml or applications.yaml.
+  overrides:
+    app:
+      variables:
+        d8config:
+          "system.file:path:temporary": "/tmp"
+        d8settings:
+          "skip_permissions_hardening": 1
+
+services:
+  appserver:
+    scanner: false
+    build:
+      - "composer global require drupal/coder dealerdirect/phpcodesniffer-composer-installer mglaman/drupal-check phpunit/phpunit"
+      - 'export PATH="/var/www/.composer/vendor/bin"'
+      - "wget https://asm89.github.io/d/twig-lint.phar -P /var/www"
+  node:
+    type: node
+    build:
+      - "yarn install -y"
+#  memcache:
+#    type: memcached
+#  solr:
+#    type: solr:8.4
+#    config:
+#      dir: docroot/modules/contrib/search_api_solr/solr-conf/7.x
+
+# These are tools that are commonly used during development for this template.
+tooling:
+  drush:
+    service: app
+  phpcs:
+    service: appserver
+    cmd: "phpcs"
+    options:
+    description: Run phpcs for given folder or file.
+  drupal-check:
+    service: appserver
+    cmd: "drupal-check"
+    options:
+    description: Run drupal-check for given folder or file.
+  twig-lint:
+    service: appserver
+    cmd: "php /var/www/twig-lint.phar"
+    options:
+    description: Run twig-lint for given folder or file.
+  eslint:
+    service: node
+    cmd: "node ./node_modules/eslint/bin/eslint.js --config=.eslintrc.json"
+    options:
+    description: Run jshint for given folder or file.
+  stylelint:
+    service: node
+    cmd: "npx stylelint --config .stylelintrc.json"
+    options:
+    description: Run stylelint for given folder or file.

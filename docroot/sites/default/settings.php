@@ -4,7 +4,7 @@
  * Platform.sh example settings.php file for Drupal 8.
  */
 
-// Default Drupal 8 settings.
+// Default Drupal settings.
 //
 // These are already explained with detailed comments in Drupal's
 // default.settings.php file.
@@ -30,7 +30,7 @@ $settings['file_scan_ignore_directories'] = [
 // Set up a config sync directory.
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
-$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 // Automatic Platform.sh settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {

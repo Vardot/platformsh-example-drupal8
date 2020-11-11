@@ -32,29 +32,20 @@
     "composer/installers": "~1.0",
     "oomphinc/composer-installers-extender": "~1.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core-composer-scaffold": "^8.8.0",
-    "drupal/core-project-message": "^8.8.0",
+    "drupal/core-composer-scaffold": "^9",
+    "drupal/core-project-message": "^9",
     "drupal/drupal-library-installer-plugin": "^0.3",
     "webflo/drupal-finder": "~1.0",
-    "drupal/redis": "^1.2",
-    "drupal/console": "^1.9",
-    "drush/drush": "^10.1",
-    "platformsh/config-reader": "^2.3",
     "webmozart/path-util": "~2.0",
-    "vardot/varbase": "~8.8.0",
-    "vardot/varbase-updater": "~1.0"
+    "vardot/varbase": "~9.0",
+    "vardot/varbase-updater": "~2.0",
+    "drupal/redis": "^1.4",
+    "drush/drush": "^10.3",
+    "platformsh/config-reader": "^2.3"
   },
   "require-dev": {
-    "drupal/coder": "~8.0",
-    "drupal/drupal-extension": "~3.0",
     "phing/phing": "~2.0",
-    "behat/behat": "~3.0",
-    "behat/mink": "~1.0",
-    "behat/mink-extension": "~2.0",
-    "behat/mink-goutte-driver": "~1.0",
-    "behat/mink-zombie-driver": "~1.0",
-    "behat/mink-selenium2-driver": "~1.0",
-    "behatch/contexts": "~3.0",
+    "drupal/drupal-extension": "~4.0",
     "emuse/behat-html-formatter": "^0.2.0"
   },
   "replace": {
@@ -68,6 +59,17 @@
       "drupal/core": "dist"
     }
   },
+  "scripts": {
+    "post-install-cmd": [
+      "Varbase\\composer\\ScriptHandler::createRequiredFiles",
+      "Varbase\\composer\\ScriptHandler::removeGitDirectories"
+    ],
+    "post-update-cmd": [
+      "Varbase\\composer\\ScriptHandler::createRequiredFiles",
+      "Varbase\\composer\\ScriptHandler::removeGitDirectories"
+    ],
+    "post-drupal-scaffold-cmd": ["Varbase\\composer\\ScriptHandler::postDrupalScaffoldProcedure"]
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "conflict": {
@@ -79,7 +81,7 @@
         "drupal/core"
       ],
       "locations": {
-          "web-root": "web/"
+        "web-root": "docroot/"
       }
     },
     "drupal-core-project-message": {
@@ -87,7 +89,7 @@
         "post-create-project-cmd-message": [
             "<bg=blue;fg=white>                                                         </>",
             "<bg=blue;fg=white>  Congratulations, you’ve installed the Varbase codebase </>",
-            "<bg=blue;fg=white>  from the vardot/platformsh-example-varbase template!   </>",
+            "<bg=blue;fg=white>  from the vardot/varbase-project template!              </>",
             "<bg=blue;fg=white>                                                         </>",
             "",
             "<bg=yellow;fg=black>Next steps</>:",
@@ -112,32 +114,31 @@
       "we will revert to using (cweagans/composer-patches) without this override."
     ],
     "branch-alias": {
-      "dev-8.x-8.x": "8.8.x-dev"
+      "dev-9.0.x": "9.0.x-dev"
     },
     "installer-types": [
       "bower-asset",
       "npm-asset"
     ],
     "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/profiles/{$name}": ["type:drupal-profile"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "web/libraries/slick": ["npm-asset/slick-carousel"],
-      "web/libraries/ace": ["npm-asset/ace-builds"],
-      "web/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
-      "web/libraries/masonry": ["npm-asset/masonry-layout"],
-      "web/libraries/{$name}": [
+      "docroot/core": ["type:drupal-core"],
+      "docroot/profiles/{$name}": ["type:drupal-profile"],
+      "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+      "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+      "docroot/libraries/slick": ["npm-asset/slick-carousel"],
+      "docroot/libraries/ace": ["npm-asset/ace-builds"],
+      "docroot/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
+      "docroot/libraries/{$name}": [
         "type:drupal-library",
         "type:bower-asset",
         "type:npm-asset"
       ],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-      "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+      "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "drupal-libraries": {
-      "library-directory": "web/libraries",
+      "library-directory": "docroot/libraries",
       "libraries": [
         {"name": "dropzone","package": "npm-asset/dropzone"},
         {"name": "blazy", "package": "npm-asset/blazy"},
@@ -147,7 +148,6 @@
         {"name": "c3","package": "bower-asset/c3"},
         {"name": "d3", "package": "bower-asset/d3"},
         {"name": "jquery-ui-touch-punch", "package": "bower-asset/jqueryui-touch-punch"},
-        {"name": "masonry", "package": "npm-asset/masonry-layout"},
         {"name": "imagesloaded", "package": "npm-asset/imagesloaded"},
         {"name": "swagger-ui", "package": "swagger-api/swagger-ui"}
       ]

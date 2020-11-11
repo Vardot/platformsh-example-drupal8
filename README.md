@@ -1,4 +1,4 @@
-# Varbase project template for Platform.sh
+# Varbase Project Template for Platform.sh
 
 This project provides a starter kit for Varbase 8.8.x projects hosted on [Platform.sh](http://platform.sh). It
 is very closely based on the [Varbase Composer project](https://github.com/Vardot/varbase-project).
@@ -9,9 +9,9 @@ Drupal is a flexible and extensible PHP-based CMS framework.
 
 ## Services
 
-* PHP 7.2
-* MariaDB 10.2
-* Redis 5
+* PHP 7.3
+* MariaDB 10.4
+* Redis 6
 
 ## Post-install
 
@@ -34,5 +34,5 @@ The following changes have been made relative to Drupal 8 "Recommended" project 
 * [Drupal](https://www.drupal.org/)
 * [Varbase](https://www.drupal.org/project/varbase)
 * [Vardot](https://www.drupal.org/vardot)
-* [Drupal on Platform.sh](https://docs.platform.sh/frameworks/drupal8.html)
+* [Drupal on Platform.sh](https://docs.platform.sh/guides/drupal9/deploy.html)
 * [PHP on Platform.sh](https://docs.platform.sh/languages/php.html)
